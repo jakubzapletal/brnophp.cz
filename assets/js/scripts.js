@@ -1,19 +1,16 @@
-
 jQuery(document).ready(function() {
-
     /*
         Background slideshow
     */
-    $('.coming-soon').backstretch([
-      "/img/backgrounds/3.jpg"
-    , "/img/backgrounds/2.jpg"
-    , "/img/backgrounds/1.jpg"
-    ], {duration: 3000, fade: 750});
+    var $commingSoon = $('.coming-soon');
+    var backgrounds = $commingSoon.data('backgrounds').split(',');
+    console.log(backgrounds);
+    $('.coming-soon').backstretch(backgrounds, {duration: 3000, fade: 750});
 
     /*
         Countdown initializer
     */
-    var now = new Date("2013-08-09 17:30:00");
+    var now = new Date("2013-08-10 16:00:00");
     var countTo = now.valueOf();
     $('.timer').countdown(countTo, function(event) {
         var $this = $(this);
@@ -35,12 +32,7 @@ jQuery(document).ready(function() {
     /*
         Tooltips
     */
-    $('.social a.facebook').tooltip();
-    $('.social a.twitter').tooltip();
-    $('.social a.dribbble').tooltip();
-    $('.social a.googleplus').tooltip();
-    $('.social a.pinterest').tooltip();
-    $('.social a.flickr').tooltip();
+    $('.social a').tooltip();
 
     /*
         Subscription form

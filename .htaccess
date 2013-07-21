@@ -1,5 +1,5 @@
 RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^/previous-meetups %{DOCUMENT_ROOT}/previous-meetups.html [QSA,L]
-RewriteRule ^/$ %{DOCUMENT_ROOT}/index.html [QSA,L]
+RewriteRule ^previous-meetups /previous-meetups.html [QSA,L]
+RewriteRule ^/ /index.html [QSA,L]
