@@ -27,13 +27,13 @@
   
   $.fn.countdown = function(toDate, callback) {
     var handlers = ['seconds', 'minutes', 'hours', 'days', 'weeks', 'daysLeft'];
-    
+
     function delegate(scope, method) {
       return function() { return method.call(scope) }
     }
     
     return this.each(function() {
-      // Convert
+      /*// Convert
       if(!(toDate instanceof Date)) {
         if(String(toDate).match(/^[0-9]*$/)) {
           toDate = new Date(toDate);
@@ -48,7 +48,7 @@
         } else {
           throw new Error("Doesn't seen to be a valid date object or string")
         }
-      }
+      }*/
       
       var $this = $(this),
           values = {},

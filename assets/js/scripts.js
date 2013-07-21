@@ -10,8 +10,8 @@ jQuery(document).ready(function() {
     /*
         Countdown initializer
     */
-    var now = new Date("2013-08-10 16:00:00");
-    var countTo = now.valueOf();
+    var countTo = new Date("2013-08-10");
+    countTo.setHours(16);
     $('.timer').countdown(countTo, function(event) {
         var $this = $(this);
         switch(event.type) {
