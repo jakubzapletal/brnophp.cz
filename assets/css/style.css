@@ -386,6 +386,7 @@ a:hover { text-decoration: none; }
 }
 
 .container-inverse {
+    color: #bcbcbc;
     background: #080808 url(../img/pattern_black.jpg);
     padding: 20px 0;
 }
