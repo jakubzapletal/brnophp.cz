@@ -10,7 +10,7 @@ jQuery(document).ready(function() {
     /*
         Countdown initializer
     */
-    var countTo = new Date("2013-08-10");
+    var countTo = new Date("2014-01-18");
     countTo.setHours(16);
     $('.timer').countdown(countTo, function(event) {
         var $this = $(this);
