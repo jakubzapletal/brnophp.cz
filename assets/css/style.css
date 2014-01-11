@@ -399,6 +399,10 @@ a:hover { text-decoration: none; }
     text-align: right;
 }
 
+.pt10 {
+    padding-top: 10px;
+}
+
 .ma20 {
     margin: 20px 0;
 }
